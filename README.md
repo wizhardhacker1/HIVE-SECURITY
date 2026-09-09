@@ -4,7 +4,7 @@
 <img width="1890" height="886" alt="image" src="https://github.com/user-attachments/assets/c6db6677-8c60-41ef-b592-a8e80e06ecc8" />
 <br>
 
-** Added Certfor Hive Security  
+** Added Cert for Hive Security  
 <img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/4e29fcec-64ea-4802-92fc-e47c3a7e139d" />
 
 

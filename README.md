@@ -17,9 +17,9 @@ Local-First Cybersecurity Operations, Threat Intelligence, Vulnerability Managem
 
 ---
 
-## 🚀 HIVE SECURITY 0.7.5
+## 🚀 HIVE SECURITY 
 
-HIVE SECURITY 0.7.5 expands the platform with a visual **Interactive Cyber Kill Chain** containing operational Red Team, Blue Team, and Purple Team command references across the full attack lifecycle.
+HIVE SECURITY  expands the platform with a visual **Interactive Cyber Kill Chain** containing operational Red Team, Blue Team, and Purple Team command references across the full attack lifecycle.
 
 ### Major capabilities
 
@@ -32,7 +32,7 @@ HIVE SECURITY 0.7.5 expands the platform with a visual **Interactive Cyber Kill 
 - 🔴 Red Team Workspace
 - 🔵 Blue Team Workspace
 - 🟣 Purple Team Workspace
-- 🔎 Built-In Pentest Scanner
+- 🔎 Built-In Pentest Scanner and Report writer
 - 🔐 Credentialed Scanning
 - ⏱️ Scheduled Scanning
 - 🖥️ Asset Intelligence
@@ -59,7 +59,7 @@ HIVE SECURITY 0.7.5 expands the platform with a visual **Interactive Cyber Kill 
 
 # ⛓️ INTERACTIVE CYBER KILL CHAIN
 
-HIVE SECURITY 0.7.5 introduces a visual and interactive Cyber Kill Chain workspace.
+HIVE SECURITY introduces a visual and interactive Cyber Kill Chain workspace.
 
 The seven stages are presented as a connected operational workflow:
 

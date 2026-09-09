@@ -3,7 +3,8 @@
 <img width="430" height="86" alt="image" src="https://github.com/user-attachments/assets/db9e8003-ac37-434a-8015-0c5c0f3102d6" />
 <br>
 
-<img width="150" height="150" alt="image" src="buymeacoffee.com/wizhardhacker1" />
+<img width="75" height="75" alt="image" src="https://github.com/user-attachments/assets/d1333dc6-9464-4897-9c1b-46d23cd50450" />
+
 
 
 

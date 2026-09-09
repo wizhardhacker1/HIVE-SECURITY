@@ -6,378 +6,617 @@
 
 
 
+Local-First Cybersecurity Operations, Threat Intelligence, Vulnerability Management, Red/Blue/Purple Team Operations, Compliance & Security Training
 
+![HIVE SECURITY Dashboard](assets/hive-security-dashboard.png)
 
-### Local-First Cybersecurity Operations, Threat Intelligence, Vulnerability Management, Compliance & Security Training
-
-<img width="1888" height="923" alt="image" src="https://github.com/user-attachments/assets/8b9d2295-2fec-4c1d-a660-7bc67c8687ea" />
-
-
-**HIVE SECURITY** is a Windows-focused, local-first cybersecurity operations platform that brings threat intelligence, vulnerability assessment, incident response, penetration testing, exposure management, compliance, detection engineering, security education, reporting, and local AI into a unified workspace.
+**HIVE SECURITY** is a Windows-focused, local-first cybersecurity operations platform that combines threat intelligence, vulnerability assessment, incident response, penetration-test reporting, exposure management, compliance, detection engineering, Red/Blue/Purple Team operations, security education, reporting, and local AI in one unified workspace.
 
 > **SIGNAL → INVESTIGATE → REMEDIATE → VALIDATE → ASSURE**
 
-HIVE SECURITY is designed to reduce tool fragmentation by connecting security information and operational workflows inside one application.
+---
+
+## 🚀 HIVE SECURITY 0.7.5
+
+HIVE SECURITY 0.7.5 expands the platform with a visual **Interactive Cyber Kill Chain** containing operational Red Team, Blue Team, and Purple Team command references across the full attack lifecycle.
+
+### Major capabilities
+
+- 🖥️ Unified Security Operations
+- 🌎 Global Threat Activity
+- 🧠 IOC Intelligence Center
+- 📰 Cyber News
+- 🔗 OSINT & Intelligence Launchpad
+- ⛓️ Interactive Cyber Kill Chain
+- 🔴 Red Team Workspace
+- 🔵 Blue Team Workspace
+- 🟣 Purple Team Workspace
+- 🔎 Built-In Pentest Scanner
+- 🔐 Credentialed Scanning
+- ⏱️ Scheduled Scanning
+- 🖥️ Asset Intelligence
+- 🧬 CVE / CISA KEV Correlation
+- 🎯 Exposure Management
+- 🚨 SOC / Incident Response
+- 🕵️ Investigations
+- 🔒 Evidence Locker
+- 📄 Pentest Report Management
+- 🛠️ Remediation Queue
+- 🛡️ STIG Compliance
+- 📡 Detection Engineering
+- 🎯 MITRE ATT&CK Coverage
+- 👁️ Watchlists
+- 🔔 Notifications
+- 📋 Risk & GRC
+- 📊 Executive Reporting
+- 📚 Security Academy
+- 👥 User / Certification Management
+- 🤖 Local AI — Meta Llama 3.2 3B
+- 🧰 Analyst Toolbox
 
 ---
 
-## 🛡️ Platform Overview
+# ⛓️ INTERACTIVE CYBER KILL CHAIN
 
-HIVE SECURITY provides a unified environment for:
+HIVE SECURITY 0.7.5 introduces a visual and interactive Cyber Kill Chain workspace.
 
-- Security operations
-- Global threat intelligence
-- IOC investigation
-- Cybersecurity news
-- Vulnerability scanning
-- Credentialed security assessments
-- Asset intelligence
-- CVE and CISA KEV correlation
-- Exposure management
-- Incident response
-- Investigations
-- Evidence management
-- Penetration-test reporting
-- Remediation tracking
-- STIG compliance
-- Red Team operations
-- Blue Team operations
-- Purple Team validation
-- Detection engineering
-- MITRE ATT&CK coverage
-- Risk and GRC
-- Watchlists
-- Scheduled scanning
-- Executive reporting
-- Security certification training
-- Local AI
-
----
-
-# 🖥️ UNIFIED OPERATIONS
-
-The **Unified Operations** dashboard provides a single operational picture across HIVE SECURITY.
-
-Instead of working through disconnected security tools, information moves through a common workflow:
+The seven stages are presented as a connected operational workflow:
 
 ```text
-1. SIGNAL
-   Threat Intelligence / Telemetry
-              ↓
-2. INVESTIGATE
-   SOC / Investigations / Evidence
-              ↓
-3. REMEDIATE
-   Vulnerabilities / STIG / Findings
-              ↓
-4. VALIDATE
-   Red Team / Blue Team / Purple Team
-              ↓
-5. ASSURE
-   Risk / Compliance / Reporting
+┌──────────────────┐
+│  RECONNAISSANCE  │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│  WEAPONIZATION   │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│     DELIVERY     │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│   EXPLOITATION   │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│   INSTALLATION   │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ COMMAND & CONTROL│
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│    ACTIONS ON    │
+│    OBJECTIVES    │
+└──────────────────┘
 ```
 
-The dashboard provides visibility into:
+Select a phase to examine the activity from three different perspectives:
 
-- Active incidents
-- Investigations
-- Open vulnerabilities
-- Tracked findings
-- STIG findings
-- CAT I / II / III findings
-- Integration health
-- Active work
-- Remediation activity
+```text
+🔴 RED TEAM
+   ↓
+How would an authorized tester assess this stage?
+
+🔵 BLUE TEAM
+   ↓
+How can defenders discover and investigate the activity?
+
+🟣 PURPLE TEAM
+   ↓
+How can both teams safely validate the organization's visibility?
+```
+
+---
+
+## ⚡ 138+ Kill Chain Commands & Actions
+
+HIVE SECURITY contains more than **138 Red, Blue, and Purple Team command/action references** distributed across the seven Kill Chain stages.
+
+Commands include:
+
+- Team designation
+- Kill Chain phase
+- Command
+- Description
+- Operational purpose
+- Usage guidance
+- Copy Command control
+
+This turns the Kill Chain from a static diagram into an operational security reference.
+
+---
+
+# 🔴 RECONNAISSANCE
+
+Red Team reconnaissance focuses on authorized information gathering and exposure discovery.
+
+Examples include:
+
+```powershell
+Resolve-DnsName example.com
+```
+
+```cmd
+nslookup example.com
+```
+
+```bash
+dig example.com
+```
+
+```bash
+whois example.com
+```
+
+```bash
+curl -I https://example.com
+```
+
+```bash
+openssl s_client -connect example.com:443
+```
+
+Activities include:
+
+- DNS enumeration
+- WHOIS research
+- Certificate transparency
+- HTTP inspection
+- TLS inspection
+- Route discovery
+- Service exposure
+- Public infrastructure research
+
+Blue Team commands focus on detecting reconnaissance through:
+
+- DNS logs
+- Firewall logs
+- Proxy logs
+- Connection telemetry
+- Endpoint telemetry
+
+Purple Team activities validate whether reconnaissance is visible to defenders.
+
+---
+
+# 🔴 WEAPONIZATION
+
+Weaponization is represented through safe artifact-analysis and defensive-validation workflows rather than malware creation.
+
+Activities include:
+
+- File hashing
+- File metadata
+- Digital signatures
+- String extraction
+- Defender inspection
+- Artifact validation
+- File telemetry
+- Detection testing
+
+Example:
+
+```powershell
+Get-FileHash .\sample.bin -Algorithm SHA256
+```
+
+HIVE SECURITY intentionally does not provide malware-generation or weaponized-payload creation commands.
+
+---
+
+# 📦 DELIVERY
+
+The Delivery stage focuses on identifying and validating mechanisms used to transfer suspicious content.
+
+Activities include:
+
+- HTTP inspection
+- Redirect analysis
+- TLS inspection
+- File download telemetry
+- PowerShell logging
+- Process creation
+- Defender events
+- Email/web delivery visibility
+
+Blue Team examples can include investigation of:
+
+```text
+Windows Event ID 4104
+PowerShell Script Block Logging
+```
+
+and:
+
+```text
+Windows Event ID 4688
+Process Creation
+```
+
+Purple Team workflows help validate whether delivery-related telemetry reaches the organization's monitoring systems.
+
+---
+
+# 💥 EXPLOITATION
+
+This stage focuses on vulnerability and exposure validation without automatically exploiting targets.
+
+Activities include:
+
+- Service identification
+- Version assessment
+- HTTP method inspection
+- Security headers
+- TLS configuration
+- SMB configuration
+- Patch inventory
+- Vulnerability correlation
+- Detection validation
+
+HIVE SECURITY does not automatically launch exploit payloads.
+
+---
+
+# 🧩 INSTALLATION
+
+Installation focuses primarily on identifying persistence mechanisms and system changes.
+
+Defensive checks can include:
+
+```powershell
+Get-Service
+```
+
+```powershell
+Get-ScheduledTask
+```
+
+```powershell
+Get-CimInstance Win32_StartupCommand
+```
+
+```powershell
+Get-ItemProperty HKCU:\Software\Microsoft\Windows\CurrentVersion\Run
+```
+
+Linux defensive inspection can include:
+
+```bash
+systemctl list-units --type=service
+```
+
+```bash
+systemctl list-timers
+```
+
+Activities focus on identifying:
+
+- Services
+- Scheduled tasks
+- Startup applications
+- Run keys
+- Installed software
+- Linux services
+- Timers
+- Persistence indicators
+
+---
+
+# 📡 COMMAND & CONTROL
+
+Command & Control analysis focuses on network communication and unusual connection behavior.
+
+Activities include:
+
+- Active connections
+- Listening ports
+- DNS activity
+- TLS inspection
+- Routing
+- Proxy configuration
+- Socket inspection
+- Owning-process identification
+
+Examples:
+
+```powershell
+Get-NetTCPConnection
+```
+
+```cmd
+netstat -ano
+```
+
+```bash
+ss -tulpn
+```
+
+Blue Team workflows help identify unexpected outbound communication.
+
+Purple Team activities can safely validate whether controlled network activity is visible to monitoring systems.
+
+---
+
+# 🎯 ACTIONS ON OBJECTIVES
+
+The final Kill Chain stage focuses on identifying behavior involving sensitive resources and security objectives.
+
+Activities include:
+
+- File inspection
+- ACL inspection
+- Evidence hashing
+- SMB share review
+- Local administrator review
+- Authentication-event analysis
+- Canary-file validation
+- Response validation
+
+The objective is to determine whether security controls can detect activity affecting important organizational resources.
+
+---
+
+# 🟣 PURPLE TEAM VALIDATION
+
+Purple Team functionality connects Red Team testing directly to Blue Team visibility.
+
+```text
+AUTHORIZED RED ACTION
+        ↓
+GENERATE EXPECTED TELEMETRY
+        ↓
+BLUE TEAM SEARCH
+        ↓
+EVENT OBSERVED?
+     ↙       ↘
+   YES        NO
+    ↓          ↓
+ VALIDATED   DETECTION GAP
+    ↓          ↓
+ ATT&CK      CREATE /
+ COVERAGE    IMPROVE RULE
+       \      /
+        ↓    ↓
+         RETEST
+```
+
+This allows HIVE SECURITY to answer an important operational question:
+
+> **If this activity occurred in our environment, would we actually see it?**
+
+---
+
+# 🎯 MITRE ATT&CK + KILL CHAIN
+
+The Kill Chain works alongside the HIVE SECURITY MITRE ATT&CK Coverage workspace.
+
+Security activity can move from:
+
+```text
+KILL CHAIN PHASE
+       ↓
+RED TEAM VALIDATION
+       ↓
+ATT&CK TECHNIQUE
+       ↓
+BLUE TEAM TELEMETRY
+       ↓
+DETECTION RULE
+       ↓
+PURPLE TEAM TEST
+       ↓
+COVERAGE
+```
+
+Coverage can be classified as:
+
+```text
+OBSERVED
+DETECTION EXISTS
+TESTED
+GAP
+```
+
+---
+
+# 🌐 OSINT & INTELLIGENCE LAUNCHPAD
+
+HIVE SECURITY includes an analyst launchpad for external intelligence and OSINT resources.
+
+Resources include:
+
+### OSINT Framework
+
+Structured directory of OSINT tools and resources.
+
+### Shodan
+
+Internet-connected device and exposed-service research.
+
+### Censys
+
+Internet host, service, certificate, and web-property intelligence.
+
+### VirusTotal
+
+File, hash, URL, domain, and IP reputation research.
+
+### AbuseIPDB
+
+IP reputation and abuse intelligence.
+
+### GreyNoise
+
+Internet scanning and background-noise intelligence.
+
+### urlscan.io
+
+Website and URL investigation.
+
+### SecurityTrails
+
+DNS and domain intelligence.
+
+### crt.sh
+
+Certificate Transparency research.
+
+### CISA KEV
+
+Known Exploited Vulnerabilities catalog.
+
+### MITRE ATT&CK
+
+Adversary tactics and techniques knowledge base.
+
+### Cyber Kill Chain
+
+Reference material for the Cyber Kill Chain methodology.
+
+External intelligence resources open separately so the active HIVE SECURITY investigation remains available.
 
 ---
 
 # 🌎 GLOBAL THREAT ACTIVITY
 
-HIVE SECURITY aggregates threat intelligence to provide analysts with current IOC activity and security context.
+Threat Activity combines external intelligence with HIVE SECURITY investigation workflows.
 
-Supported capabilities include:
-
-- Malicious IP intelligence
-- Threat-feed aggregation
-- Recent IOC activity
-- CISA Known Exploited Vulnerabilities
-- Botnet intelligence
-- Suspicious network indicators
-- Threat investigation pivots
-- IOC watchlists
-- Threat-feed health
-
-IOC results can be investigated directly using:
-
-- HIVE SECURITY IOC Triage
-- VirusTotal
-- AbuseIPDB
-- GreyNoise
-- Shodan
-
-Indicators can then move into investigations, findings, watchlists, or other operational workflows.
-
-> Threat-feed indicators represent intelligence and should not automatically be interpreted as proof that an environment has been compromised.
-
----
-
-# 🧠 IOC INTELLIGENCE CENTER
-
-The IOC Intelligence Center provides centralized investigation of:
+Indicators can be pivoted into:
 
 ```text
-IP Addresses
-Domains
-URLs
-File Hashes
-CVEs
+IOC
+ ↓
+IOC INTELLIGENCE
+ ↓
+OSINT / REPUTATION
+ ↓
+WATCHLIST
+ ↓
+INVESTIGATION
+ ↓
+ASSET CORRELATION
+ ↓
+FINDING
+ ↓
+REMEDIATION
 ```
 
-Indicators can be:
+Supported intelligence workflows include:
 
-- Enriched
-- Investigated
-- Added to watchlists
-- Associated with investigations
-- Connected to assets
-- Connected to findings
-- Marked benign
-- Correlated with threat intelligence
+- CISA KEV
+- Feodo
+- DShield
+- Spamhaus
+- NVD
+- ThreatFox
+- GreyNoise
+- AlienVault OTX
+- AbuseIPDB
+- VirusTotal
 
-Optional integrations can provide additional enrichment.
-
----
-
-# 📰 CYBER NEWS
-
-HIVE SECURITY includes an integrated cybersecurity news workspace.
-
-Sources can include:
-
-- BleepingComputer
-- The Hacker News
-- Dark Reading
-- SecurityWeek
-- Cybersecurity Dive
-- CyberScoop
-- The Record
-- Krebs on Security
-- CISA Cybersecurity Advisories
-
-Features include:
-
-- Headline aggregation
-- Source filtering
-- Search
-- Publication dates
-- Feed-health monitoring
-- Original article links
-- Government advisory identification
-
-HIVE SECURITY links users to the original publishers rather than presenting third-party reporting as its own content.
+Some services require their own API credentials.
 
 ---
 
 # 🔎 BUILT-IN PENTEST SCANNER
 
-HIVE SECURITY contains a built-in vulnerability-assessment scanner.
+HIVE SECURITY includes a native authorized vulnerability-assessment scanner.
 
-No separate Nessus or Nmap installation is required for the native scanning functionality.
+No separate Nessus or Nmap installation is required for its native scanning functionality.
 
-## Scan Profiles
-
-### Quick Scan
-
-Designed for rapid host and common-service discovery.
-
-Supports networks up to approximately:
+### Quick
 
 ```text
-/22
+Up to approximately /22
 1,024 total IPv4 addresses
 ```
 
-### Standard Vulnerability Scan
+### Standard
 
-Provides deeper inspection including:
+```text
+Up to approximately /24
+256 total IPv4 addresses
+```
+
+### Credentialed
+
+```text
+Up to approximately /24
+256 total IPv4 addresses
+```
+
+Capabilities include:
 
 - TCP service discovery
-- Common service ports
-- Management ports
-- Database ports
-- Web services
-- HTTP analysis
-- Security-header inspection
+- Common application ports
+- HTTP inspection
+- Security-header analysis
 - TLS inspection
-- Banner collection
-- Exposed-service checks
-- Selected version/configuration indicators
-
-Supports networks up to approximately:
-
-```text
-/24
-256 total IPv4 addresses
-```
-
-### Credentialed Scan
-
-Supports authenticated assessment using stored credentials.
-
-Credentialed scans support approximately:
-
-```text
-/24
-256 total IPv4 addresses
-```
-
----
-
-# 🔐 SCAN CREDENTIALS
-
-HIVE SECURITY supports encrypted credential profiles for authorized authenticated assessments.
-
-## Linux / Unix
-
-Supported credential information includes:
-
-```text
-SSH Username
-Password
-Private Key
-```
-
-## Windows
-
-Supported credential information includes:
-
-```text
-WinRM Username
-Password
-Windows Domain
-```
-
-Sensitive credentials are encrypted at rest.
-
-Stored passwords and private keys are not returned to the browser after they are saved.
-
-Analysts are restricted according to their assigned permissions and credential profiles.
-
----
-
-# 🎯 EXPOSURE MANAGEMENT
-
-Exposure Management connects discovered infrastructure with vulnerability intelligence.
-
-```text
-ASSETS
-   ↓
-HIVE SECURITY SCANNER
-   ↓
-SERVICE DISCOVERY
-   ↓
-CVE / CISA KEV INTELLIGENCE
-   ↓
-POSSIBLE EXPOSURE
-   ↓
-VALIDATE FINDING
-   ↓
-OWNER + REMEDIATION
-   ↓
-RETEST
-   ↓
-VERIFIED REMEDIATED
-```
-
-This allows analysts to focus on vulnerabilities that may actually affect systems in their environment.
-
----
-
-# 🖥️ ASSET INTELLIGENCE
-
-HIVE SECURITY maintains persistent asset information.
-
-Asset records can include:
-
-- IP address
-- Hostname
-- Operating-system information
-- Open ports
-- Services
-- Last scan
-- Scan history
-- Vulnerabilities
-- Findings
-- Incidents
-- Owner
-- Criticality
-- Tags
-- Exposure information
-
-Assets connect scanning, investigations, findings, CVEs, remediation, and exposure management.
-
----
-
-# 🧬 CVE & CISA KEV CORRELATION
-
-HIVE SECURITY can correlate vulnerability information with known security intelligence.
-
-Sources can include:
-
-- NVD
-- CISA Known Exploited Vulnerabilities
-- HIVE SECURITY scanner results
-
-The platform can help connect:
-
-```text
-Asset
-  ↓
-Service
-  ↓
-Possible CVE
-  ↓
-CISA KEV Status
-  ↓
-Finding
-  ↓
-Remediation
-  ↓
-Retest
-```
-
-CVE correlation is intended to assist analyst investigation and should be validated before being treated as a confirmed vulnerability.
+- Banner inspection
+- Risky exposed-service checks
+- Selected legacy service indicators
+- SSH authenticated inventory
+- Windows WinRM authenticated inventory
+- PDF reports
+- Finding import
 
 ---
 
 # ⏱️ SCHEDULED SCANNING
 
-Administrators can create recurring vulnerability-assessment jobs.
+Scans can be scheduled to run while HIVE SECURITY is operating.
 
-Scheduled scans can include:
+Schedules can contain:
 
 - Target
-- Scan profile
+- Scan type
 - Credential profile
 - Schedule
-- Previous result
-- Last-run status
+- Previous run
+- Result
 
-Historical scans can help identify changes such as:
+Historical results help identify:
 
 ```text
-NEW SERVICE
-CLOSED SERVICE
-NEW FINDING
-REMEDIATED FINDING
-CONFIGURATION CHANGE
+NEW SERVICES
+CLOSED SERVICES
+NEW FINDINGS
+REMEDIATED FINDINGS
+CONFIGURATION CHANGES
 ```
 
 ---
 
-# 🚨 SOC / INCIDENT RESPONSE
+# 🎯 EXPOSURE MANAGEMENT
 
-HIVE SECURITY provides an incident-response workflow built around six phases:
+Scanner findings can be correlated with CVE and CISA KEV intelligence.
+
+```text
+ASSET
+  ↓
+SERVICE
+  ↓
+VULNERABILITY
+  ↓
+CVE
+  ↓
+CISA KEV?
+  ↓
+PRIORITY
+  ↓
+REMEDIATE
+  ↓
+RETEST
+```
+
+---
+
+# 🚨 SOC & INCIDENT RESPONSE
+
+HIVE SECURITY uses a six-phase incident lifecycle:
 
 ```text
 1. Detect & Validate
@@ -388,99 +627,42 @@ HIVE SECURITY provides an incident-response workflow built around six phases:
 6. Lessons Learned
 ```
 
-Incident records can contain:
-
-- Status
-- Severity
-- Owner
-- Notes
-- Evidence
-- Lifecycle progress
-- Related investigation information
-
----
-
-# 🕵️ INVESTIGATIONS
-
-Investigation case management provides a centralized location for security investigations.
-
-Cases can contain:
-
-- Investigation title
-- Severity
-- Status
-- Summary
-- IOCs
-- Evidence
-- Timeline information
-- Notes
-- Related assets
-- Related incidents
-- Related findings
-
-User-created investigations can be edited or deleted according to permissions.
-
-Important changes are captured through the audit system.
+Incidents can connect to investigations, evidence, findings, and other operational information.
 
 ---
 
 # 🔒 EVIDENCE LOCKER
 
-HIVE SECURITY includes encrypted evidence management.
+Evidence management includes:
 
-Evidence records can contain:
-
-- Original filename
-- SHA-256 hash
+- Encrypted file storage
+- SHA-256 hashing
 - Investigator
 - Timestamp
-- Case association
+- Investigation association
 - Notes
-- Audit history
+- Audit events
 
-Evidence files are encrypted at rest.
-
-Evidence bytes are treated as immutable.
-
-If evidence changes, a new evidence object should be stored instead of silently modifying the original file.
+Evidence file bytes are treated as immutable.
 
 ---
 
-# 📄 PENTEST REPORT MANAGEMENT
+# 🛡️ STIG COMPLIANCE
 
-Third-party penetration-test reports can be imported into HIVE SECURITY.
+Capabilities include:
 
-Supported formats include:
-
-```text
-PDF
-DOCX
-TXT
-MD
-CSV
-JSON
-XML
-HTML
-```
-
-Features include:
-
-- Encrypted report storage
-- Extracted finding management
-- Local AI-assisted analysis
-- Manual finding creation
-- Finding editing
-- Finding deletion
-- Severity tracking
-- Evidence tracking
-- Remediation recommendations
-- Retesting
+- Windows security baseline assessment
+- CKL import
+- CKLB import
+- XCCDF/XML import
+- CAT I
+- CAT II
+- CAT III
+- Scan history
 - Finding status
-- PDF remediation reports
+- Remediation
 
-Deleting a pentest report can also remove report-derived findings and associated remediation documents.
-
-Uploaded report content is treated as data and is not executed.
+The native HIVE SECURITY baseline scanner is a defensive helper and is not represented as a replacement for official DISA assessment tooling.
 
 ---
 
@@ -488,648 +670,171 @@ Uploaded report content is treated as data and is not executed.
 
 ## Meta Llama 3.2 3B + Ollama
 
-HIVE SECURITY integrates a local AI system using:
+The **HIVE SECURITY 0.7.5 FULL INSTALL** includes Local AI provisioning.
+
+The installer checks for:
 
 ```text
-Ollama
-+
-Meta Llama 3.2 3B
+OLLAMA
+   +
+META LLAMA 3.2 3B
 ```
 
-The installer can automatically:
+Installation workflow:
 
-1. Check for Ollama
-2. Reuse an existing installation
-3. Install Ollama when missing
-4. Check for `llama3.2:3b`
-5. Download the model when missing
-6. Start/check the local Ollama service
-7. Verify the local API
-8. Perform a real inference health test
+```text
+Install HIVE SECURITY
+        ↓
+Check Ollama
+    ↙       ↘
+FOUND       MISSING
+  ↓            ↓
+REUSE       INSTALL
+    \         /
+        ↓
+Check llama3.2:3b
+    ↙           ↘
+FOUND           MISSING
+  ↓                ↓
+REUSE           DOWNLOAD
+     \            /
+          ↓
+     START OLLAMA
+          ↓
+     API HEALTH TEST
+          ↓
+     AI INFERENCE TEST
+          ↓
+     LOCAL AI READY
+```
 
-The local AI API uses:
+The Ollama API is accessed locally at:
 
 ```text
 http://127.0.0.1:11434
 ```
 
-This allows supported AI workflows to remain on the local system instead of requiring report content to be sent to a cloud LLM.
+A repair/provisioning utility is also included:
 
-A separate repair utility is also provided:
-
-```text
+```bat
 SETUP_LOCAL_AI.bat
 ```
 
 ---
 
-# 🛠️ REMEDIATION QUEUE
-
-Security findings can be managed through a centralized remediation workflow.
-
-Typical states include:
-
-```text
-OPEN
-IN PROGRESS
-AWAITING RETEST
-REMEDIATED
-ACCEPTED RISK
-CLOSED
-```
-
-Records can include:
-
-- Finding
-- Severity
-- Owner
-- Due date
-- SLA
-- Evidence
-- Remediation
-- Retest result
-- Current status
-
----
-
-# 🛡️ STIG COMPLIANCE
-
-HIVE SECURITY includes Windows defensive-baseline assessment capabilities and support for imported STIG assessment results.
-
-Supported imports include:
-
-```text
-CKL
-CKLB
-XCCDF
-XML
-```
-
-Capabilities include:
-
-- Windows baseline checks
-- CAT I tracking
-- CAT II tracking
-- CAT III tracking
-- Scan history
-- Finding status
-- Remediation tracking
-- Imported assessment management
-
-### Important
-
-The native HIVE SECURITY baseline scanner is a defensive configuration-assessment helper.
-
-It is **not a replacement for official DISA STIG assessment tooling**.
-
-Organizations requiring authoritative STIG assessments should use applicable DISA benchmarks and approved assessment tools.
-
----
-
-# ⚔️ RED TEAM
-
-The Red Team workspace provides authorized security-testing references and engagement tracking.
-
-Capabilities focus on areas such as:
-
-- Reconnaissance
-- DNS inspection
-- HTTP inspection
-- TLS inspection
-- Service discovery
-- Local posture checks
-- Evidence collection
-- Engagement tracking
-
-HIVE SECURITY does not provide automated malware deployment, destructive attacks, persistence, credential theft, or security-control evasion.
-
----
-
-# 🔵 BLUE TEAM
-
-The Blue Team workspace provides defensive investigation and response resources.
-
-Areas include:
-
-- IOC analysis
-- Log investigation
-- Host investigation
-- Network investigation
-- Evidence collection
-- Detection
-- Incident response
-- Defensive command references
-
----
-
-# 🟣 PURPLE TEAM
-
-Purple Team connects offensive validation with defensive detection.
-
-Analysts can use Purple Team workflows to:
-
-- Validate detections
-- Record test results
-- Identify security gaps
-- Associate MITRE ATT&CK techniques
-- Improve defensive coverage
-- Connect Red Team activity to Blue Team visibility
-
----
-
-# 🎯 MITRE ATT&CK COVERAGE
-
-HIVE SECURITY can map security activity against MITRE ATT&CK.
-
-Mappings can connect:
-
-- Investigations
-- Findings
-- Threat intelligence
-- Detection rules
-- Purple Team tests
-
-Coverage states can include:
-
-```text
-OBSERVED
-DETECTION EXISTS
-TESTED
-GAP
-```
-
-This provides a view of where security visibility and validation exist and where additional defensive work may be needed.
-
----
-
-# 📡 DETECTION ENGINEERING
-
-HIVE SECURITY includes a defensive detection library.
-
-Supported detection content can include:
-
-```text
-Sigma
-YARA
-Splunk
-Microsoft KQL
-Elastic
-```
-
-Detection records can be connected to:
-
-- MITRE ATT&CK
-- Investigations
-- Threat intelligence
-- Purple Team validation
-- Security findings
-
----
-
-# 👁️ WATCHLISTS
-
-Watchlists allow analysts to monitor security objects of interest.
-
-Supported watchlist objects can include:
-
-```text
-IP Address
-Domain
-Hash
-CVE
-Vendor
-Product
-Asset
-```
-
-HIVE SECURITY can correlate watchlist entries against supported:
-
-- Threat intelligence
-- CISA KEV
-- Cyber News
-- Scanner results
-- Investigations
-
----
-
-# 🔔 NOTIFICATIONS
-
-Notification rules can surface important security events.
-
-Examples include:
-
-- Critical finding
-- CISA KEV exposure
-- Scan completed
-- Scan failed
-- Credential failure
-- Finding overdue
-- Certificate issue
-- Watchlist match
-- Important threat activity
-
----
-
-# 📊 EXECUTIVE REPORTING
-
-HIVE SECURITY can generate security reporting covering areas such as:
-
-- Vulnerability posture
-- Critical findings
-- Remediation progress
-- Incident activity
-- Scan coverage
-- STIG posture
-- KEV exposure
-- Risk posture
-- Security trends
-
-PDF reports can be used for operational review and management reporting.
-
----
-
-# 📋 RISK & GRC
-
-Framework tracking includes:
-
-- NIST Cybersecurity Framework 2.0
-- CIS Controls v8
-- ISO/IEC 27001
-- NIST RMF / SP 800-53
-- PCI DSS
-- SOC 2
-- HIPAA Security Rule
-
-Risk records can be tracked alongside operational security findings.
-
----
-
 # 📚 HIVE SECURITY ACADEMY
 
-HIVE SECURITY contains an integrated cybersecurity certification training environment.
+Integrated certification preparation includes:
 
----
-
-## CompTIA Security+
-
-SY0-701-oriented training includes:
-
-- 80 original practice questions
-- Guided modules
-- Flashcards
-- Labs
-- Video resources
-- Official resources
-
-Major study areas include:
-
-- Security concepts
-- Threats and vulnerabilities
-- Security architecture
-- Security operations
-- Security program management
-
----
-
-## CompTIA SecurityX
-
-CAS-005-oriented training includes:
-
-- 80 original practice questions
-- Guided modules
-- Flashcards
-- Labs
-- Video and official resources
-
-Study areas include:
-
-- Governance, Risk and Compliance
-- Security Architecture
-- Security Engineering
-- Security Operations
-- Zero Trust
-- Cloud security
-- OT/ICS
-- Detection engineering
-- Incident response
-
----
-
-## CISSP
-
-CISSP preparation covers all eight major domains:
-
-1. Security and Risk Management
-2. Asset Security
-3. Security Architecture and Engineering
-4. Communication and Network Security
-5. Identity and Access Management
-6. Security Assessment and Testing
-7. Security Operations
-8. Software Development Security
-
-Includes:
-
-- 80 original practice questions
-- Guided modules
-- Flashcards
-- Labs
-- Official learning resources
-
----
-
-## LFCS
-
-Linux Foundation Certified System Administrator preparation covers:
-
-- Operations & Deployment
-- Networking
-- Storage
-- Essential Commands
-- Users & Groups
-
-Includes:
-
-- 80 original knowledge questions
-- Guided modules
-- Flashcards
-- Hands-on labs
-- Official learning resources
-
-LFCS is performance-based, so HIVE SECURITY's multiple-choice testing is intended as supporting knowledge preparation rather than a reproduction of the actual certification exam.
-
----
-
-## CEH
-
-CEH v13-oriented preparation includes:
-
-- 20 guided modules
+### CompTIA Security+
+- SY0-701-oriented
 - 80 original questions
+
+### CompTIA SecurityX
+- CAS-005-oriented
+- 80 original questions
+
+### ISC2 CISSP
+- 8 domains
+- 80 original questions
+
+### Linux Foundation LFCS
+- Linux administration
+- 80 original knowledge questions
+- Hands-on labs
+
+### EC-Council CEH
+- v13-oriented
+- 20 modules
+- 80 original questions
+
+The Academy includes:
+
+- Guided lessons
+- Practice exams
+- Immediate answer feedback
+- Correct-answer explanations
+- Domain scoring
 - Flashcards
 - Labs
-- Video resources
-- Official resources
+- Resource links
+- PASS / NOT YET PASSING results
 
 ---
 
-# 📝 INTERACTIVE EXAMS
+# 👥 USER MANAGEMENT
 
-Academy tests can be configured as:
-
-```text
-10 Questions
-25 Questions
-40 Questions
-Full Question Bank
-```
-
-After answering a question, HIVE SECURITY immediately provides:
+Portal roles include:
 
 ```text
-CORRECT
-or
-INCORRECT
+ADMIN
+ANALYST
+VIEWER
 ```
-
-along with:
-
-- Correct answer
-- Explanation
-- Domain information
-
-Once the answer has been revealed, the recorded response cannot be changed.
-
-At completion, the test displays:
-
-- Correct answers
-- Incorrect answers
-- Unanswered questions
-- Percentage
-- Domain performance
-- PASS / NOT YET PASSING
-- Complete answer review
-
-Practice scoring is clearly distinguished from vendor-specific scaled or performance-based certification scoring.
-
----
-
-# 🎓 USER CERTIFICATION PROFILES
-
-Administrators can associate professional certifications with portal users.
-
-Supported credential types include:
-
-```text
-Security+
-SecurityX
-CISSP
-LFCS
-CEH
-Other
-```
-
-Certification records can contain:
-
-- Certification name
-- Credential / certificate ID
-- Issue date
-- Expiration date
-- Verification URL
-- Notes
-
-Certification records can be:
-
-```text
-ADD
-EDIT
-DELETE
-```
-
----
-
-# 👥 PORTAL USER MANAGEMENT
-
-HIVE SECURITY supports role-based user accounts.
-
-## Administrator
-
-Full administrative and configuration access.
-
-## Analyst
-
-Operational security access according to assigned permissions.
-
-## Viewer
-
-Read-only access to supported areas.
 
 Administrators can:
 
 - Create users
 - Edit users
-- Delete users
-- Enable users
 - Disable users
-- Change portal passwords
-- Manage professional certifications
-- Manage scanner credential profiles
+- Delete users
+- Reset passwords
+- Manage certifications
+- Manage scan credentials
 
-Changing a user's password revokes that user's existing sessions.
-
-Portal passwords are protected using Argon2 password hashing.
-
----
-
-# 🧰 SECURITY OPERATIONS TOOLBOX
-
-The built-in analyst toolbox includes utilities such as:
-
-- Hash generation
-- IOC parsing
-- Base64 encoding/decoding
-- URL encoding/decoding
-- Hex utilities
-- Subnet calculations
-- JWT decoding
-- Regex testing
-- SIEM query generation
-- Password generation
-- Password-hash auditing
-
-The password-hash audit capability is deliberately bounded.
-
-It is intended only for password hashes that the operator owns or is explicitly authorized to assess.
-
-It does not perform remote password spraying.
+Passwords are protected using Argon2 hashing.
 
 ---
 
-# 🔌 INTEGRATIONS
+# 🎓 PROFESSIONAL CERTIFICATIONS
 
-HIVE SECURITY supports public intelligence sources and optional API-based integrations.
-
-## No-Key / Public Sources
-
-Examples include:
-
-- CISA KEV
-- Feodo Tracker
-- DShield
-- Spamhaus DROP
-- NVD
-
-## Optional Intelligence Integrations
-
-Examples include:
-
-- ThreatFox
-- GreyNoise
-- AlienVault OTX
-- AbuseIPDB
-- VirusTotal
-
-HIVE SECURITY can also maintain configuration for security operations integrations such as SIEM, XDR, cloud, ticketing, and notification systems.
-
-Sensitive integration secrets are encrypted.
-
----
-
-# ✏️ DATA MANAGEMENT
-
-A core HIVE SECURITY design rule is:
-
-> **Operational information created by a user should be manageable by that user or an authorized administrator.**
-
-Where appropriate, user-created records support:
+User profiles can store certifications such as:
 
 ```text
-VIEW
-EDIT
-DELETE
-EXPORT
+CompTIA Security+
+CompTIA SecurityX
+ISC2 CISSP
+Linux Foundation LFCS
+EC-Council CEH
+Other
 ```
 
-This applies across areas such as:
+Records can include:
 
-- Investigations
-- Incidents
-- Assets
-- Risks
-- Findings
-- Pentest reports
-- Scanner results
-- STIG scans
-- Scheduled scans
-- Watchlists
-- Detection rules
-- Evidence notes
-- Notification rules
-- User certifications
-- Playbook activity
+- Credential ID
+- Issue date
+- Expiration date
+- Verification URL
+- Notes
 
-Security-sensitive actions are audit logged.
-
-Deleting an operational object does not require removing the minimal security audit record documenting who performed the deletion and when.
-
----
-
-# 📜 AUDIT LOGGING
-
-Security-sensitive actions are recorded in the HIVE SECURITY audit system.
-
-Audit information can include:
-
-- User
-- Action
-- Source IP
-- Timestamp
-- Object affected
-- Security event type
-
-Examples include:
-
-- Authentication failure
-- Blocked authentication
-- User creation
-- User deletion
-- Password reset
-- Credential modification
-- Finding deletion
-- Evidence activity
-- Scan activity
-- Configuration changes
-
-Sensitive passwords and private keys are not written to the audit log.
+Certification records support add, edit, and delete operations.
 
 ---
 
 # 🔒 SECURITY ARCHITECTURE
 
-HIVE SECURITY is designed as a local-first application.
+HIVE SECURITY is designed as a local-first platform.
 
 Security controls include:
 
-- Loopback-only application binding
+- Loopback-only application service
 - Authentication
 - Argon2 password hashing
 - Random session tokens
-- Hashed session-token storage
-- HttpOnly session cookies
+- Hashed session tokens
+- HttpOnly cookies
 - SameSite cookies
 - CSRF protection
 - Login rate limiting
 - Host-header restrictions
 - Security headers
 - Role-based access control
-- Encrypted sensitive fields
+- Encryption of sensitive fields
 - Encrypted pentest reports
 - Encrypted evidence
-- Encrypted scan credentials
+- Encrypted scanner credentials
 - Encrypted integration secrets
 - Audit logging
-
-For additional host protection, Windows device encryption or BitLocker is recommended where appropriate.
 
 ---
 
@@ -1142,128 +847,40 @@ Recommended:
 ```text
 Windows 10 / Windows 11
 64-bit Windows
-Internet connection for initial dependency/model installation
-Several GB of available disk space for Local AI
+Internet connection for initial setup
+Several GB of disk space for Local AI
 ```
+
+## Install
+
+1. Download:
+
+```text
+HIVE_SECURITY_0_7_5_FULL_INSTALL.zip
+```
+
+2. Extract the ZIP.
+
+3. Run the included installation BAT file.
+
+4. Allow the installer to provision dependencies and Local AI.
+
+5. Launch HIVE SECURITY from the installed Windows shortcut/application.
 
 ---
 
-## Installation
+# 🔄 UPGRADES & PERSISTENT DATA
 
-### 1. Download HIVE SECURITY
+HIVE SECURITY separates application code from persistent operational data.
 
-Download the latest:
+Upgrades are designed to preserve existing:
 
-```text
-HIVE_SECURITY_FULL_INSTALL.zip
-```
-
-### 2. Extract the ZIP
-
-Do not run the installer directly from inside the compressed archive.
-
-### 3. Run
-
-```bat
-INSTALL_HIVE_SECURITY.bat
-```
-
-The installer provisions the application and its required local environment.
-
----
-
-# 🤖 LOCAL AI INSTALLATION
-
-During installation, HIVE SECURITY checks for Ollama.
-
-```text
-Ollama installed?
-       │
-       ├── YES → reuse installation
-       │
-       └── NO → install Ollama
-                       ↓
-              Check llama3.2:3b
-                       ↓
-               Model installed?
-                 │           │
-                YES          NO
-                 │           │
-                 └─────→ Download
-                            ↓
-                     Start Ollama
-                            ↓
-                     API Health Check
-                            ↓
-                     Inference Test
-                            ↓
-                     LOCAL AI READY
-```
-
-If Local AI requires repair or reprovisioning, run:
-
-```bat
-SETUP_LOCAL_AI.bat
-```
-
----
-
-# 🚀 APPLICATION LAUNCHER
-
-Normal day-to-day use should be through:
-
-```text
-HiveSecurity.exe
-```
-
-The launcher:
-
-1. Starts the secured local backend
-2. Waits for the application to become healthy
-3. Opens the HIVE SECURITY portal
-4. Uses the branded HIVE SECURITY Windows icon
-
-The application uses a local web interface rather than exposing the service publicly.
-
----
-
-# 📁 APPLICATION STORAGE
-
-The intended HIVE SECURITY installation structure is:
-
-```text
-%LOCALAPPDATA%\HiveSecurity\
-│
-├── HiveSecurity.exe
-│
-├── app\
-├── data\
-├── logs\
-└── backups\
-```
-
-Persistent operational information belongs under:
-
-```text
-%LOCALAPPDATA%\HiveSecurity\data
-```
-
-Application code and persistent data are separated so application upgrades do not intentionally replace the operational database.
-
----
-
-# 🔄 UPGRADING
-
-New HIVE SECURITY versions are designed to preserve existing operational data.
-
-This can include:
-
-- Portal users
+- Users
 - Password hashes
-- User certifications
-- Scan credentials
+- Certifications
 - API keys
 - Integration secrets
+- Scan credentials
 - Findings
 - Investigations
 - Incidents
@@ -1276,36 +893,10 @@ This can include:
 - Scheduled scans
 - Detection rules
 - Watchlists
-- Study progress
+- Academy progress
 - Audit history
 
-Database migrations are performed when application schemas change.
-
-Backups are still recommended before significant upgrades.
-
----
-
-# 🔐 PRIVACY
-
-HIVE SECURITY is designed around local operation.
-
-Operational data is stored on the user's computer.
-
-Sensitive information can be encrypted locally, including:
-
-- Pentest reports
-- Evidence
-- Scan credentials
-- Integration secrets
-- Sensitive finding content
-
-Local AI communicates with Ollama over the loopback interface:
-
-```text
-127.0.0.1
-```
-
-External intelligence and news services necessarily receive normal network requests when those services are accessed.
+Backups are still recommended before major upgrades.
 
 ---
 
@@ -1313,54 +904,58 @@ External intelligence and news services necessarily receive normal network reque
 
 HIVE SECURITY is intended for legitimate:
 
-- Cybersecurity operations
-- Defensive security
-- System administration
-- Threat intelligence
+- Defensive cybersecurity
+- Security administration
 - Vulnerability assessment
+- Threat intelligence
 - Incident response
+- Detection engineering
 - Compliance assessment
 - Security education
 - Security research
 - Authorized penetration testing
+- Red Team exercises
+- Blue Team operations
+- Purple Team validation
 
-**Only scan, assess, monitor, or test systems that you own or have explicit authorization to evaluate.**
+**Only scan, investigate, or test systems that you own or have explicit authorization to assess.**
 
-Users are responsible for complying with applicable:
+The Interactive Kill Chain is designed as an authorized security-testing and defensive-validation reference.
 
-- Laws
-- Regulations
-- Contracts
-- Organizational policies
-- Rules of engagement
-- Authorization boundaries
+It intentionally does not provide automated malware deployment, destructive exploitation, credential theft, persistence deployment, stealth/evasion, or uncontrolled attack automation.
 
 ---
 
-# ⚠️ DISCLAIMER
-
-HIVE SECURITY is a security operations and assessment platform.
-
-Automated findings, CVE correlations, service identification, threat-intelligence matches, Local AI analysis, and other automated results should be validated by a qualified analyst before operational decisions are made.
-
-HIVE SECURITY does not claim to replace authoritative commercial or government-required security assessment products where those products are mandated.
-
----
-
-# 🛡️ HIVE SECURITY
 
 ```text
-               SIGNAL
-                  ↓
-             INVESTIGATE
-                  ↓
-              REMEDIATE
-                  ↓
-               VALIDATE
-                  ↓
-                ASSURE
+              GLOBAL SIGNALS
+                    ↓
+             THREAT ACTIVITY
+                    ↓
+             IOC INTELLIGENCE
+                    ↓
+          INTERACTIVE KILL CHAIN
+                    ↓
+       ┌────────────┼────────────┐
+       ↓            ↓            ↓
+    🔴 RED        🔵 BLUE      🟣 PURPLE
+       └────────────┼────────────┘
+                    ↓
+               MITRE ATT&CK
+                    ↓
+          DETECTION ENGINEERING
+                    ↓
+              INVESTIGATION
+                    ↓
+               REMEDIATION
+                    ↓
+                  RETEST
+                    ↓
+                 ASSURE
 ```
 
-### One operational picture. One security workspace. Local-first.
+### SIGNAL → INVESTIGATE → REMEDIATE → VALIDATE → ASSURE
+
+**One operational picture. One security workspace. Local-first.**
 
 **HIVE SECURITY**

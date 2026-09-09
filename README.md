@@ -2,7 +2,8 @@
 
 ### Local-First Cybersecurity Operations, Threat Intelligence, Vulnerability Management, Compliance & Security Training
 
-![HIVE SECURITY Dashboard](assets/hive-security-dashboard.png)
+<img width="1888" height="923" alt="image" src="https://github.com/user-attachments/assets/8b9d2295-2fec-4c1d-a660-7bc67c8687ea" />
+
 
 **HIVE SECURITY** is a Windows-focused, local-first cybersecurity operations platform that brings threat intelligence, vulnerability assessment, incident response, penetration testing, exposure management, compliance, detection engineering, security education, reporting, and local AI into a unified workspace.
 

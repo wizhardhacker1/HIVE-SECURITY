@@ -2,8 +2,8 @@
 
 <img width="430" height="86" alt="image" src="https://github.com/user-attachments/assets/db9e8003-ac37-434a-8015-0c5c0f3102d6" />
 
-If you like this or any of my tools help support me and the time.
-buymeacoffee.com/wizhardhacker1<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/705089d7-5c2c-4c65-b4a5-c475cf46275b" />
+
+<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/705089d7-5c2c-4c65-b4a5-c475cf46275b" />
 
 
 

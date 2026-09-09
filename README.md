@@ -1,4 +1,5 @@
-# 🛡️ HIVE SECURITY
+<img width="430" height="86" alt="image" src="https://github.com/user-attachments/assets/db9e8003-ac37-434a-8015-0c5c0f3102d6" />
+
 
 ### Local-First Cybersecurity Operations, Threat Intelligence, Vulnerability Management, Compliance & Security Training
 

@@ -1,9 +1,11 @@
 <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/d1333dc6-9464-4897-9c1b-46d23cd50450" /> Buy me a Coffee- buymeacoffee.com/wizhardhacker1
 
 
-<img width="430" height="86" alt="image" src="https://github.com/user-attachments/assets/db9e8003-ac37-434a-8015-0c5c0f3102d6" />
+<img width="1890" height="886" alt="image" src="https://github.com/user-attachments/assets/c6db6677-8c60-41ef-b592-a8e80e06ecc8" />
 <br>
 
+** Added Certfor Hive Security  
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/4e29fcec-64ea-4802-92fc-e47c3a7e139d" />
 
 
 Local-First Cybersecurity Operations, Threat Intelligence, Vulnerability Management, Red/Blue/Purple Team Operations, Compliance & Security Training

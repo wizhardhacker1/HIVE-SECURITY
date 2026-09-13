@@ -1,0 +1,4 @@
+cd HIVE_SECURITY_DOCKER_PODMAN_0_7_45
+cp .env.example .env
+chmod +x *.sh
+./START_HIVE_CONTAINERS.sh

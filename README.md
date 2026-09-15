@@ -11,7 +11,7 @@
 Local-First Cybersecurity Operations, Threat Intelligence, Vulnerability Management, Red/Blue/Purple Team Operations, Compliance & Security Training
 
 
-**HIVE SECURITY** is a Windows-focused, local-first cybersecurity operations platform that combines threat intelligence, vulnerability assessment, incident response, penetration-test reporting, exposure management, compliance, detection engineering, Red/Blue/Purple Team operations, security education, reporting, and local AI in one unified workspace.
+**HIVE SECURITY** is a Windows/Linux-focused, local-first cybersecurity operations platform that combines threat intelligence, vulnerability assessment, incident response, penetration-test reporting, exposure management, compliance, detection engineering, Red/Blue/Purple Team operations, security education, reporting, and local AI in one unified workspace.
 
 > **SIGNAL → INVESTIGATE → REMEDIATE → VALIDATE → ASSURE**
 
